@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="text" id="name"  />
+    <button onclick="submit()">Submit</button>
+    <h1 id="title"></h1>
+
+    <script>
+     function submit(){
+     
+        let varrr =document.getElementById("name").value;
+        document.getElementById("title").innerHTML = varrr;
+        // console.log("clicked");
+     }
+     if (varrr === "") {
+          document.getElementById("title").innerHTML =
+            "Please enter your value";
+          document.getElementById("title").style.color = "red";
+        }
+     
+    </script>
+    
+</body>
+</html>
